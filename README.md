@@ -56,3 +56,15 @@ Pada gambar di atas kita bisa melihat releasefile yang telah berhasil dibuat.
 * Pada bagian kanan atas terdapat button edit dan delete yang berfungsi untuk mengedit file release ataupun menghapus jika diperlukan.
 * Lalu, di samping kiri ada detail dari versi rilis, mulai dari tag version ke berapa, versi rilis pada kode commit apa, dan ada juga tombol compare. Tombol compare berfungsi untuk melakukan komparasi antara satu versi rilis dengan versi rilis lainnya.
 * Selanjutnya, di bagian tengah terdapat tampilan dari release title, deskripsi tentang release file, dan Assets. Pada bagian assets akan menyediakan tautan untuk mengunduh proyek sesuai versi yang telah dibuat, biasanya dalam bentuk zip atau tar.gz.
+
+
+*Git Branch*
+
+Branching adalah teknik untuk memisahkan cabang utama ke cabang lain dengan tujuan agar cabang utama tetap bisa dijaga kondisinya.
+![image](https://user-images.githubusercontent.com/92366497/220154823-4ce62028-0de2-4f46-a8d8-6f7954b84179.png)
+
+Pada ilustrasi di atas terdapat 3 branch, yaitu:
+
+* Master, yaitu branch (cabang) utama yang seharusnya tidak memiliki bug atau apa pun yang berhubungan dengan kesalahan dalam pengodean/coding. Umumnya, cabang inilah yang dipakai sebagai production atau versi stabil.
+* Fitur baru, yaitu branch untuk menambah fitur baru. Semua commit yang berhubungan dengan fitur baru akan di-push ke branch ini.
+* Bug fixing, yaitu branch yang digunakan untuk memperbaiki bug yang terjadi. Cabang bug fixing dibuat terpisah untuk menghindari kesalahan penulisan pada kode perbaikan yang dapat menyebabkan cabang utama menjadi memiliki lebih banyak bug.
